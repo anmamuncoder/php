@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Username Form</title>
+</head>
+<body>
+
+<form method="post">
+    {% csrf_token %}
+
+    <label for="username">Username:</label>
+    <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter username"
+        value="{{ username }}"
+    />
+    <button type="submit">Submit</button>
+</form>
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
+
+{% if username and not error %}
+    <h2>Hello {{ username }}</h2>
+{% endif %}
+
+</body>
+</html>
