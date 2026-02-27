@@ -1,0 +1,24 @@
+Browser
+  ↓
+index.php (router)
+  ↓
+UserController::home()
+  ↓
+User model → getData()
+  ↓
+extract data
+  ↓
+views/home.php
+  ↓
+HTML response
+
+
+
+(Django way → PHP way)
+
+| MVC          | Django      | PHP Mini MVC                     |
+| ------------ | ----------- | -------------------------------- |
+| Model        | `models.py` | `models/User.php`                |
+| View (logic) | `views.py`  | `controllers/UserController.php` |
+| Template     | `.html`     | `views/*.php`                    |
+| URL          | `urls.py`   | `index.php` (router)             |
