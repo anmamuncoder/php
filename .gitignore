@@ -1,0 +1,96 @@
+##################################
+# OS Files
+##################################
+.DS_Store
+Thumbs.db
+
+##################################
+# IDE / Editor
+##################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+##################################
+# Logs
+##################################
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+##################################
+# Environment Files
+##################################
+.env
+.env.*
+*.env
+
+##################################
+# Python
+##################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+##################################
+# Django (if used)
+##################################
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+##################################
+# PHP
+##################################
+
+# Composer
+/vendor/
+composer.lock
+
+# PHPStorm
+.phpunit.result.cache
+
+# PHPUnit
+.phpunit.cache/
+
+# Laravel (if used)
+node_modules/
+public/storage
+storage/*.key
+bootstrap/cache/*.php
+
+##################################
+# Node (if frontend used)
+##################################
+node_modules/
+dist/
+build/
+
+##################################
+# Cache / Temp
+##################################
+.cache/
+tmp/
+temp/
